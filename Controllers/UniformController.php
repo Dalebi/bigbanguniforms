@@ -52,15 +52,15 @@ class UniformController {
     function store($url_params){
         //here run validation rules, omited for now
         $uniform = new Uniform();
-        $uniform->store($url_params);
+        echo  $uniform->store($url_params);       
     }
 
     function update($url_params){
         //here run validation rules, omited for now
         $uniform = new Uniform();
-        $result = $uniform->update($url_params);
+        echo  $uniform->update($url_params);
 
-        header('location: ../Resources/Views/Edit.html?id='.$url_params['id'].'&result='.$result);
+        //header('location: ../Resources/Views/Edit.html?id='.$url_params['id'].'&result='.$result);
     }
 }
 

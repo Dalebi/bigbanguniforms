@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Uniforme</title>
 
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
     <script src="../Js/Helpers.js"></script>    
     <script src="../Js/Edit.js"></script>    
 
@@ -22,7 +23,7 @@
     <h2><i class="fa-solid fa-file-pen"></i> Editar Uniforme</h2>
     
     <div class="mt-4 ">
-        <form action="../../Config/routes.php" method="post">
+        <form action="../../Config/routes.php" method="post" id="editForm">
 
             <div class="mb-2">
                 <input type="hidden" name="id" id="id">
@@ -31,17 +32,17 @@
 
             <div class="mb-2">
                 <div><label for="model">Modelo</label></div>
-                <div><input type="text" name="model" id="model" class="w-100"></div>
+                <div><input type="text" name="model" id="model" class="w-100" required></div>
             </div>
 
             <div class="mb-2">
                 <div><label for="color">Color</label></div>
-                <div><input type="text" name="color" id="color" class="w-100"></div>
+                <div><input type="text" name="color" id="color" class="w-100" required></div>
             </div>
 
             <div class="mb-2">
                 <div><label for="size" >Talla</label></div>
-                <div><select name="size" id="size" class="w-100">
+                <div><select name="size" id="size" class="w-100" required>
                     <!-- For demo purposes only, in real application non static list should be printed dinamicaly  -->
                     <option value="xs">Extra Chica</option>
                     <option value="s">Chica</option>
@@ -53,7 +54,7 @@
             
             <div class="mb-2">
                 <div><label for="amount" >Cantidad</label></div>
-                <div><input type="text" name="amount" id="amount" class="w-100"></div>
+                <div><input type="text" name="amount" id="amount" class="w-100" required></div>
             </div>
 
             <div class="mb-2  mt-4">

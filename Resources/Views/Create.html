@@ -11,6 +11,9 @@
 
     <script src="https://kit.fontawesome.com/e91bc97062.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="../Js/Create.js"></script>
 </head>
 <body>
     <div class="container w-50  fs-5">
@@ -18,7 +21,7 @@
     <h2><i class="fa-solid fa-file-circle-plus"></i> Agregar Uniforme</h2>
     
     <div class="mt-4 ">
-        <form action="../../Config/routes.php" method="post">
+        <form id="createForm" action="../../Config/routes.php" method="post" >
 
             <div class="mb-2">
                 <div><label for="model">Modelo</label></div>
@@ -34,6 +37,7 @@
                 <div><label for="model">Talla</label></div>
                 <div><select name="size" id="size" class="w-100" required>
                     <!-- For demo purposes only, in real application non static list should be printed dinamicaly  -->
+                    <option value="">Seleccione ..</option>
                     <option value="xs">Extra Chica</option>
                     <option value="s">Chica</option>
                     <option value="m">Mediana</option>
