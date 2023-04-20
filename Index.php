@@ -16,9 +16,13 @@
     <script src="https://kit.fontawesome.com/e91bc97062.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1 class="border-bottom border-light pb-2 mb-4 text-white " style="background-image: linear-gradient(90deg, rgba(255,0,0,3), rgba(255,255,255,1))">
-   <a href="/"><i class="fa-solid fa-house"></i> Big Bang Uniforms</a></h1>    
-
+<div class="">
+    <h1 class="border-bottom border-light pb-2 mb-4 text-white " style="padding-left: 50px;
+            box-sizing: border-box;
+            background-image: linear-gradient(90deg, rgba(120,120,120,3), rgba(255,255,255,1))">
+       <a href="/"><i class="fa-solid fa-house"></i> Big Bang Uniforms</a>
+    </h1>    
+</div>
 <iframe src="Resources/Views/Index.html" frameborder="0" class="container-fluid" style="height: 600px;" ></iframe>
 </body>
 </html>
