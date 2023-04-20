@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="../Css/style.css">
+
+    <!-- Datatables Configuration Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+    <script src="../Js/Index.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div style="clear: both;">
+        <div style=" float: left;"><h2>Listado de Productos &nbsp;</h2></div>
+        <div style=" float: left;  clear: right; "><button class="btn btn-primary " onclick="window.location.href='Create.html'">Nuevo</button></div>
+    </div>
+
+    <div class="text-primary my-2" style="clear: both;">De click en el ID que desea consultar</div>
+
+    <input type="hidden" name="formFilter" id="formFilter" value="getAll">
+    
+    <table id="myTable"  class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Talla</th>
+                <th>Color</th>
+                <th>Cantidad</th>                
+            </tr>
+        </thead>
+    </table>
+    </div> 
+  
+</body>
+</html>
